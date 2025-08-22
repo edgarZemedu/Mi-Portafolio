@@ -1,70 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!--Título que va aparecer arribe de la pestaña-->
-      <title>Zeme QA </title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!-- Descripción de nuestra página-->
-      <meta name="Descripción" content="Portafolio de Zemedu que muestra con que estudios, cargos, experiencia laboral que ha obtenido a lo largo de su vida laboral o académica.">
-      
-      <!--Open graph[como va aparecer mi pantalla resumido en otra redes]-->
-      
-      <!-- Generador de Favicon con https://favicon.io -->
-      <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
-      <link rel="manifest" href="imege/site.webmanifest">
+  <!--Título que va aparecer arribe de la pestaña-->
+  <title>Zeme QA </title>
 
-      <!--Para cuando se busque en inglés-->
-      <link ref="alternative" href="http://zeme.es/en" hreflang="en-GB">
-      <link ref="alternative" href="http://zeme.es/es" hreflang="es-ES">
+  <!-- Descripción de nuestra página-->
+  <meta name="Descripción"
+    content="Portafolio de Zemedu que muestra con que estudios, cargos, experiencia laboral que ha obtenido a lo largo de su vida laboral o académica.">
 
-      <!--Indicar cual es nuestra página principal para cuando redirija-->
-      <link ref="canonical" href="http://zeme.es/es">
+  <!--Open graph[como va aparecer mi pantalla resumido en otra redes]-->
 
-      <!--Añadir la librería de banderas (incluye el cdn de flag-icon-css) -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
-      
-      <!--Estilo del portafolio CSS -->
-      <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Generador de Favicon con https://favicon.io -->
+  <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+  <link rel="manifest" href="imege/site.webmanifest">
 
-  </head>
+  <!--Para cuando se busque en inglés-->
+  <link ref="alternative" href="http://zeme.es/en" hreflang="en-GB">
+  <link ref="alternative" href="http://zeme.es/es" hreflang="es-ES">
 
-  <body>
-    <!-- SELECTOR DE IDIOMAS (CLASS)-->
-     <div class="demo-content">       
-        <div class="language-selector">
-            <div class="language-button" id="languageButton">
-                <span class="flag flag-icon flag-icon-es"></span>
-                <span>Español</span>
-            </div>
-            <div class="language-dropdown" id="languageDropdown">
-                <div class="language-option" data-lang="es">
-                    <span class="flag flag-icon flag-icon-es"></span>
-                    <span>Español</span>
-                </div>
-                <div class="language-option" data-lang="en">
-                    <span class="flag flag-icon flag-icon-us"></span>
-                    <span>English</span>
-                </div>
-                <div class="language-option" data-lang="fr">
-                    <span class="flag flag-icon flag-icon-fr"></span>
-                    <span>Français</span>
-                </div>
-                <div class="language-option" data-lang="de">
-                    <span class="flag flag-icon flag-icon-de"></span>
-                    <span>Deutsch</span>
-                </div>
-                <div class="language-option" data-lang="pt">
-                    <span class="flag flag-icon flag-icon-br"></span>
-                    <span>Português</span>
-                </div>
-            </div>
+  <!--Indicar cual es nuestra página principal para cuando redirija-->
+  <link ref="canonical" href="http://zeme.es/es">
+
+  <!--Añadir la librería de banderas (incluye el cdn de flag-icon-css) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+
+  <!--Estilo del portafolio CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+  <!-- SELECTOR DE IDIOMAS (CLASS)-->
+  <div class="demo-content language-top-right">
+    <div class="language-selector">
+      <div class="language-button" id="languageButton">
+        <span class="flag flag-icon flag-icon-es"></span>
+        <span>Español</span>
+      </div>
+      <!-- Dropdown de opciones de idioma -->
+      <div class="language-dropdown" id="languageDropdown">
+        <div class="language-option" data-lang="es">
+          <span class="flag flag-icon flag-icon-es"></span>
+          <span>Español</span>
         </div>
-        <!--  
+        <div class="language-option" data-lang="en">
+          <span class="flag flag-icon flag-icon-us"></span>
+          <span>English</span>
+        </div>
+        <div class="language-option" data-lang="fr">
+          <span class="flag flag-icon flag-icon-fr"></span>
+          <span>Français</span>
+        </div>
+        <div class="language-option" data-lang="de">
+          <span class="flag flag-icon flag-icon-de"></span>
+          <span>Deutsch</span>
+        </div>
+        <div class="language-option" data-lang="pt">
+          <span class="flag flag-icon flag-icon-br"></span>
+          <span>Português</span>
+        </div>
+      </div>
+    </div>
+    <!--  
         <div class="instructions">
             <h2>Instrucciones para integrar en tu portafolio:</h2>
             <ol>
@@ -78,174 +81,203 @@
             </ol>
         </div>
         -->
+  </div>
+
+  <!-- HEADER (CLASS)-->
+  <header class="cabecera">
+    <img class="imagen" width="150"  height="150" alt="Foto de Zeme de titulo" title="Foto de Zeme" src="/image/foto_e.jpg">
+    <div class="pie-imagen">
+      <h1 class=""> Zemedu Freiria</h1>
+      <p> QA Manual and Automation 🚀</p>
     </div>
-    
-     <!-- HEADER (CLASS)-->   
-    <header class="cabecera">            
-      <img  class="" width="150" height="150" alt="Foto de Zeme de titulo" title="Foto de Zeme" src="/image/foto_e.jpg">
-      <h1 class="" > Zemedu Freiria</h1>
-      <p class="" > QA Manual and Automation 🚀</p>
-      <div>
-        <!--El target es para sacar nueva pestaña
+
+  </header>
+  <!--Contacta por Redes Sociales -->
+  <div class="redes">
+    <!--El target es para sacar nueva pestaña
             rel es para referencia sin mandar las referencias de datos    -->
-        <a href="https://github.com/edgarZemedu" target="_blank" rel="noreferrer">👨‍💻 GitHub</a>
-        <a href="https://www.linkedin.com/in/zemedu-freiria-cameselle-2627a9199/" target="_blank" rel="noreferrer"> 🔗 LinkedIn</a>
-        <button id="copyEmailBtn" class="text-lg relative"> 📨 Email </button>
-        <a href="https://wa.me/34662432796?text=Hola%20Zeme" target="_blank" rel="noreferrer">WhatsApp</a>
-        
-      </div>                
-    </header>
-    <!--Intro... -->
-    <p class="parrafo">
-        Hii 👋, I'm Zeme! I'm passionate about the software world and specialize in Agile: Software Project
-      Management with skills in Java, Selenium, Cypress, Cucumber, JavaScript, HTML, and CSS. I
-      have strengthened my team's ability to design efficient and adaptive testing
-      strategies.
-      I am always seeking continuous improvement and innovation opportunities and i am motivated by
-      challenges and the opportunity to grow into leadership roles in software quality
-      and development.
-      I am currently studying to obtain the ISTQB certification.
+    <a href="https://github.com/edgarZemedu" target="_blank" rel="noreferrer">👨‍💻 GitHub</a>
     </p>
+    <a href="https://www.linkedin.com/in/zemedu-freiria-cameselle-2627a9199/" target="_blank" rel="noreferrer"> 🔗
+      LinkedIn</a>
+    </p>
+    <a href="https://wa.me/34662432796?text=Hola%20Zeme" target="_blank" rel="noreferrer">📱 WhatsApp</a>
+    </p>
+    <a id="copyEmailBtn" class="email">📨 Email </a>
 
-    <!--Experiencia laboral -->
-    <section class="career">
-      <h2>💼 Career Experience</h2>
-      <article class="embat">
-        <header>
-          <h3 class="">Junior Engineer QA at <a href="https://app.embat.io/login" target="_blank" class=""> Embat </a></h3>
-        </header>
-        <div>
-          <small>11/03/2024 - Present [Hybrid] <strong>📍Madrid, Spain</strong></small>
-          <p>I collaborated closely with development and product teams to analyze
-            requirements(<strong>Jira, Confluence</strong>) and designs in early stages to identify potential risks and
-            issues and I worked proactively to identify opportunities for test automation and
-            contribute to the development of automated test scripts when appropriate
-            with different tools (<strong>Selenium, <strong>Cypress, Cucumber</strong>).
-            I also classified external incidences related to platforms and executing any steps
-            required in order to resolve them.</p>
-        </div>
-        <footer>
-          <!--infomarcion secundaria como añadir el tema de Copyright y se suele añadir un <small/> dentro  -->
-        </footer>
-      </article>
-      <article class="vodafoneStrategic">
-        <header>
-          <h3 class=""> IT Strategic Programs Specialist at <a href="https://oferta.vodafone.es/vodafone-one/" target="_blank" class=""> Vodafone España S.L </a></h3>
-        </header>
-        <div>
-          <small>10/05/2023 - 15/02/2024 [Hibrid]<strong>📍Vigo, Spain</strong></small>
-          <p>Design and develop IT solution in terms of application software(<strong>Jira, Confluence</strong>), operating system and data warehouses.</p>
-        </div>
-        <footer>
-        </footer>
-      </article>
-      <article class="vodafoneQA">
-        <header>
-          <h3 class="">Junior Agile QA at <a href="https://oferta.vodafone.es/vodafone-one/" target="_blank" class=""> Vodafone España S.L </a></h3>
-        </header>
-        <div>
-          <small>17/05/2022 - 10/05/2023 [Hibrid]<strong>📍Vigo, Spaiin</strong></small>
-          <p>I worked in agile environment with different teams (Development, Product,
-            Operations and Design) to assure the QA coverage.
-            I also created and executed <strong>manual test cases</strong> and attended
-            planning meetings, provided feedback on user stories and created acceptance
-            criteria.</p>
-        </div>
-        <footer>
-        </footer>
-      </article>  
-      <article class="sigma">
-        <h3>IT Developer <a href="https://sigma.world/es/" target="_blank" class=""> Sigma Igaming World</a></h3>
-        <small>11/10/2021 - 20/12/2021<strong>📍Sliema, Malta</strong></small>
-        <p>I completed my internship focused on maintaining and updating the
-          company's website.</p>
-      </article>   
-    </section>
+  </div>
+  <!--Intro... -->
+  <p class="parrafo">
+    Hii 👋, I'm Zeme!
+  </p>
+  I'm passionate about the software world and specialize in Agile: Software Project
+  Management with. I
+  have strengthened my team's ability to design efficient and adaptive testing
+  strategies.
+  I am always seeking continuous improvement and innovation opportunities and i am motivated by
+  challenges and the opportunity to grow into leadership roles in software quality
+  and development.</p>
+  I am currently studying to obtain the ISTQB certification.
+  </p>
 
-    <!--Estudios -->
-    <section class="studies">
-      <h2>🎓 Studies</h2>
-      <article class="">
-        <header>
-          <h3 class="">Higher Technician in Multi-platform Applications Development at <a href="https://www.edu.xunta.gal/centros/iesteis/" target="_blank" class="">IES Teis</a></h3>
-        </header>
+  <!--Experiencia laboral -->
+  <section class="career">
+    <h2 class="bloques">💼 Career Experience</h2>
+    <article class="pies-bloques" id="conjuerer">
+      <header>
+        <h3 class="">QA Tester at <a href="https://www.linkedin.com/company/5750516/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bl%2FUWkIgsQs2lqJOe4jZ2qQ%3D%3D" target="_blank" class=""> Conjuerer Services S.A </a>
+        </h3>
+      </header>
+      <div>
+        <small>08/07/2024 - Present <strong>📍Palma de Mallorca, Spain</strong></small>
+        <p>Translate requirements and functional specifications into documented test plans, 
+          cases, and steps. 
+          Analyze and report defects found during testing, and communicate results to the development team. Collaborate with developers and product owners to continuously improve software quality. 
+          Contribute to test automation projects by defining, creating, maintaining automated tests, and generating test reports with (<strong>Selenium + Java, Webdriver.io, Playright</strong>).
+
+            </p>
+      </div>
+      <footer>
+        <!--infomarcion secundaria como añadir el tema de Copyright y se suele añadir un <small/> dentro  -->
+      </footer>
+    </article>
+    <article class="pies-bloques" id="embat">
+      <header>
+        <h3 class="">Junior Engineer QA at <a href="https://app.embat.io/login" target="_blank" class=""> Embat </a>
+        </h3>
+      </header>
+      <div>
+        <small>11/03/2024 - Present [Hybrid] <strong>📍Madrid, Spain</strong></small>
+        <p>I collaborated closely with development and product teams to analyze
+          requirements(<strong>Jira, Confluence</strong>) and designs in early stages to identify potential risks and
+          issues and I worked proactively to identify opportunities for test automation and
+          contribute to the development of automated test scripts when appropriate
+          with different tools (<strong>Cypress, Cucumber, MongoDB</strong>).
+           </p>
+      </div>
+      <footer>
+        <!--infomarcion secundaria como añadir el tema de Copyright y se suele añadir un <small/> dentro  -->
+      </footer>
+    </article>
+    <article class="pies-bloques" id="vodafoneStrategic">
+      <header>
+        <h3 class=""> IT Strategic Programs Specialist at <a href="https://oferta.vodafone.es/vodafone-one/"
+            target="_blank" class=""> Vodafone España S.L </a></h3>
+      </header>
+      <div>
+        <small>10/05/2023 - 15/02/2024 [Hibrid]<strong>📍Vigo, Spain</strong></small>
+        <p>Design and develop IT solution in terms of application software(<strong>Jira, Confluence</strong>), operating
+          system and data warehouses.</p>
+      </div>
+      <footer>
+      </footer>
+    </article>
+    <article class="pies-bloques" id="vodafoneQA">
+      <header>
+        <h3 class="">Junior Agile QA at <a href="https://oferta.vodafone.es/vodafone-one/" target="_blank" class="">
+            Vodafone España S.L </a></h3>
+      </header>
+      <div>
+        <small>17/05/2022 - 10/05/2023 [Hibrid]<strong>📍Vigo, Spaiin</strong></small>
+        <p>I worked in agile environment with different teams (Development, Product,
+          Operations and Design) to assure the QA coverage.
+          I also created and executed <strong>manual test cases</strong> and attended
+          planning meetings, provided feedback on user stories and created acceptance
+          criteria.</p>
+      </div>
+      <footer>
+      </footer>
+    </article>
+    <article class="pies-bloques" id="sigma">
+      <h3>IT Developer <a href="https://sigma.world/es/" target="_blank" class=""> Sigma Igaming World</a></h3>
+      <small>11/10/2021 - 20/12/2021<strong>📍Sliema, Malta</strong></small>
+      <p>I completed my internship focused on maintaining and updating the
+        company's website.</p>
+    </article>
+  </section>
+
+  <!--Estudios -->
+  <section class="studies">
+    <h2 class="bloques">🎓 Studies</h2>
+    <article class="pies-bloques" id="ies-teis">
+      <header>
+        <h3 class="">Higher Technician in DAM Multi-platform Applications Development at <a
+            href="https://www.edu.xunta.gal/centros/iesteis/" target="_blank" class="">IES Teis</a></h3>
+      </header>
+      <div>
+        <small>2018 - 2020 [Vigo]</small>
+      </div>
+    </article>
+    <article class="pies-bloques" id="skillsoft">
+      <header>
+        <h3 class=""> The Advanced Agile certification at <a href="https://www.skillsoft.com" target="_blank"
+            class="">Skillsoft</a></h3>
+      </header>
+      <div>
+        <small>12/2023 [Online]</small>
+      </div>
+    </article>
+    <article class="pies-bloques" id="mtp">
+      <header>
+        <h3 class=""> The ISTQB® Certified Tester Foundation at <a href="https://www.mtp.es" target="_blank"
+            class="">MTP</a></h3>
+      </header>
+      <div>
+        <small>01/2025 - Current [Online]</small>
+      </div>
+    </article>
+  </section>
+
+  <!--Proyectos -->
+  <section class="projects">
+    <h2 class="bloques">📚 Projects & Achievements</h2>
+    <p>      <!--Añadir aquí proyectos -->    </p>
+    <footer>
+      <p>You can check all my projects at <a href="https://github.com/edgarZemedu">Github</a></p>
+    </footer>
+  </section>
+
+  <!--Ponte en contacto -->
+  <!-- <section class="contacts">
+    <h2>☎️Ponte en contacto</h2>
+    <form method="post" action="/">
+      <fieldset>
+        <legend>Información personal</legend>
         <div>
-          <small>2018 - 2020 [Vigo]</small>
+          <label for="inputName">Nombre: </label>
+          <input type="text" id="inputName" name="name" placeholder="pepito...">
         </div>
-      </article>
-      <article class="">
-        <header>
-          <h3 class=""> The Advanced Agile certification at <a href="https://www.skillsoft.com" target="_blank" class="">Skillsoft</a></h3>
-        </header>
         <div>
-          <small>12/2023 [Online]</small>
+          <label for="inputEmail">Correo:</label>
+          <input type="email" id="inputEmail" name="name" placeholder="pepito@gmail.com">
         </div>
-      </article>
-      <article class="">
-        <header>
-          <h3 class=""> The ISTQB® Certified Tester Foundation at <a href="https://www.mtp.es" target="_blank" class="">MTP</a></h3>
-        </header>
+      </fieldset>
+      <fieldset>
+        <legend>Información Adicional</legend>
         <div>
-          <small>10/2024 - Current [Online]</small>
+          <label for="inputCompany">Nombre de Empresa: </label>
+          <input type="text" id="inputCompany" name="company" placeholder="Tesla">
         </div>
-      </article>    
-    </section>
+        <div>
+          <label for="inputTel">Teléfono:</label>
+          <input type="tel" id="inputTel" name="name" placeholder="+34 12345678">
+        </div>
+      </fieldset>
+      <input type="submit" value="Enviar">
+    </form>
+  </section> -->
 
-    <!--Proyectos -->
-    <section class="projects">
-      <article>
-        <header>
-          <h2>📚 Projects & Achievements</h2>
-          <p>
-            <!--Añadir aquí proyectos -->
-          </p>
-          <footer>
-            <small>You can check all my projects at <a href="https://github.com/edgarZemedu">Github</a></small>
-          </footer>
-        </header>
-      </article>
-    </section>
+  <!--Pie de página -->
+  <div class="pie">
+    <hr class="pie-linea">
+    <div class="pie-pagina-centro">
+      <p class="p1">&copy; Zemedu Freiria Cameselle.</p>
+      <p class="p2">Check out the <a href="https://github.com/edgarZemedu/Mi-Portafolio"> code </a>.</p>
+    </div>
+  </div>
+  <!-- Scripts -->
+  <script src="script.js"></script>
 
-    <!--Ponte en contacto -->
-    <section class="contacts">   
-      <h2>☎️Ponte en contacto</h2>
-      <form method="post" action="/">
-        <fieldset>
-          <legend>Información personal</legend>
-          <div>
-            <label for="inputName">Nombre: </label>
-            <input type="text" id="inputName" name="name" placeholder="pepito...">
-          </div>  
-          <div>
-            <label for="inputEmail">Correo:</label>
-            <input type="email" id="inputEmail" name="name" placeholder="pepito@gmail.com">
-          </div>        
-        </fieldset>
-        <fieldset>
-          <legend>Información Adicional</legend>           
-          <div>
-            <label for="inputCompany">Nombre de Empresa: </label>
-            <input type="text" id="inputCompany" name="company" placeholder="Tesla">
-          </div>  
-          <div>
-            <label for="inputTel">Teléfono:</label>
-            <input type="tel" id="inputTel" name="name" placeholder="+34 12345678">
-          </div>        
-        </fieldset>
-        <input type="submit" value="Enviar">
-      </form>
-    </section>
+</body>
 
-    <!--Pie de página -->
-    <div class="pie">
-      <hr class="pie-linea">
-      <div class="pie-pagina-centro">
-        <p class="p1">&copy; Zemedu Freiria Cameselle.</p>
-        <p class="p2">Check out the <a href="https://github.com/edgarZemedu/Mi-Portafolio"> code </a>.</p>
-      </div>      
-    </div> 
-    <!-- Scripts -->
-    <script src="script.js"></script>
-
-  </body>
 </html>

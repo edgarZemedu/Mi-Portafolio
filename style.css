@@ -1,13 +1,20 @@
-
-.cabecera{
+.cabecera {
+    background-color: #f5f6fa;
     text-align: center;
+    border-width: 0;
+    border-style: solid;    
+}
+.imagen {
+    border-radius: 50%;
+    border: 5px solid #54a50c;
     box-sizing: border-box;
     border-width: 0;
     border-style: solid;
 }
-body{
-    background-color: beige;
-    /* class="bg-gray-100 text-gray-800"*/    
+
+body {
+    background-color: #f5f6fa;
+    color: #222f3e;
     padding: 2.5rem;
     max-width: 48rem;
     margin-left: auto;
@@ -16,14 +23,16 @@ body{
     border-width: 0;
     border-style: solid;
 }
-div.pie{
-    text-align: center;   
-    margin-top: 2.5rem; 
+
+div.pie {
+    text-align: center;
+    margin-top: 2.5rem;
     box-sizing: border-box;
     border-width: 0;
     border-style: solid;
 }
-.pie-linea{    
+
+.pie-linea {
     margin: 0;
     height: 0;
     color: inherit;
@@ -33,7 +42,8 @@ div.pie{
     border-style: solid;
     color: #050505;
 }
-.pie-pagina-centro{    
+
+.pie-pagina-centro {
     justify-content: center;
     flex-wrap: wrap;
     display: flex;
@@ -42,77 +52,123 @@ div.pie{
     border-style: solid;
     border-color: #e5e7eb;
 }
+
 /* Estilos generales para el selector de idioma */
-        .language-selector {
-            position: relative;
-            display: inline-block;
-            margin: 10px;
-        }
-        
-        .language-button {
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 20px;
-            padding: 8px 15px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-        }
-        
-        .language-button:hover {
-            background: rgba(255, 255, 255, 0.2);
-            border-color: rgba(255, 255, 255, 0.5);
-        }
-        
-        .language-button .flag {
-            margin-right: 8px;
-            border-radius: 50%;
-            overflow: hidden;
-            width: 20px;
-            height: 20px;
-        }
-        
-        .language-dropdown {
-            position: absolute;
-            top: 100%;
-            right: 0;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            padding: 10px 0;
-            margin-top: 5px;
-            min-width: 150px;
-            display: none;
-            z-index: 1000;
-        }
-        
-        .language-dropdown.show {
-            display: block;
-            animation: fadeIn 0.3s ease;
-        }
-        
-        .language-option {
-            padding: 8px 15px;
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-        }
-        
-        .language-option:hover {
-            background: #54a50c;
-        }
-        
-        .language-option .flag {
-            margin-right: 10px;
-            border-radius: 50%;
-            overflow: hidden;
-            width: 20px;
-            height: 20px;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+
+.language-top-right {
+    position: absolute;
+    top: 20px;
+    right: 90px;
+    z-index: 9000;
+}
+
+.language-selector {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.language-button {
+    background: rgba(255, 255, 255, 0.1);
+    border: 5px solid rgba(255, 255, 255, 0.062);
+    border-radius: 20px;
+    padding: 8px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.language-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.language-button .flag {
+    margin-right: 8px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+}
+
+.language-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    margin-top: 5px;
+    min-width: 150px;
+    display: none;
+    z-index: 1000;
+}
+
+.language-dropdown.show {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+.language-option {
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.language-option:hover {
+    background: #54a50c;
+}
+
+.language-option .flag {
+    margin-right: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos generales para el selector de idioma */
+.redes {
+    position: absolute;
+    text-align: center;
+    margin-top: 10%;
+    border-style: groove;
+    border-width: 10px;
+    top: 20px;
+    right: 100px;
+}
+
+.redes a {
+    text-decoration: none;
+}
+/*SECCIONES: Career Experience*/
+.bloques {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #54a50c;
+    padding-bottom: 0.5rem;
+}
+.pies-bloques {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #d0e2bf;
+    border-radius: 10px;
+    background-color: #f1f5f2;
+}
