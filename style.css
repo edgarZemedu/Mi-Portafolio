@@ -98,7 +98,6 @@ div.pie{
             display: flex;
             align-items: center;
             cursor: pointer;
-            transition: background 0.2s ease;
         }
         
         .language-option:hover {
