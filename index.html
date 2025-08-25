@@ -6,11 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!--Título que va aparecer arribe de la pestaña-->
-  <title>Zeme QA </title>
+  <title>Zeme</title>
 
   <!-- Descripción de nuestra página-->
-  <meta name="Descripción"
-    content="Portafolio de Zemedu que muestra con que estudios, cargos, experiencia laboral que ha obtenido a lo largo de su vida laboral o académica.">
+  <meta name="Descripción" content="Portafolio de Zemedu.">
 
   <!--Open graph[como va aparecer mi pantalla resumido en otra redes]-->
 
@@ -32,6 +31,10 @@
 
   <!--Estilo del portafolio CSS -->
   <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Boxicons CDN para iconos -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 
 </head>
 
@@ -67,205 +70,63 @@
         </div>
       </div>
     </div>
-    <!--  
-        <div class="instructions">
-            <h2>Instrucciones para integrar en tu portafolio:</h2>
-            <ol>
-                <li>Añade esta línea en el <code>&lt;head&gt;</code> de tu HTML para las banderas:
-                    <pre>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css"&gt;</pre>
-                </li>
-                <li>Copia el HTML del selector de idiomas donde quieras colocarlo (recomiendo en la esquina superior derecha)</li>
-                <li>Copia los estilos CSS en tu hoja de estilos</li>
-                <li>Copia el JavaScript al final de tu HTML antes de cerrar <code>&lt;/body&gt;</code></li>
-                <li>Para la funcionalidad real de traducción, necesitarías implementar una solución como i18next o similar</li>
-            </ol>
-        </div>
-        -->
   </div>
 
   <!-- HEADER (CLASS)-->
   <header class="cabecera">
-    <img class="imagen" width="150"  height="150" alt="Foto de Zeme de titulo" title="Foto de Zeme" src="/image/foto_e.jpg">
-    <div class="pie-imagen">
-      <h1 class=""> Zemedu Freiria</h1>
-      <p> QA Manual and Automation 🚀</p>
-    </div>
+    
+    <a href="#" class="logo">Portafolio</a>
+    <nadvar class="navegacion">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contacts">Contact</a>
+    </nadvar>
 
   </header>
-  <!--Contacta por Redes Sociales -->
-  <div class="redes">
-    <!--El target es para sacar nueva pestaña
+
+  <section class="home">
+
+    <div class="home-contenido" id="home">
+
+      <h3 class=""> Hellow 👋, It's Me</h3>
+      <h1 class=""> Zemedu Freiria Cameselle</h1>
+      <h3> And I'm a QA Developer 🚀</h3>
+      </p>
+      I'm passionate about the software world and specialize in Agile: Software Project
+      Management. I
+      have strengthened my team's ability to design efficient and adaptive testing
+      strategies.
+      I am always seeking continuous improvement and innovation opportunities and i am motivated by
+      challenges and the opportunity to grow into leadership roles in software quality
+      and development.</p>
+      I am currently studying to obtain the ISTQB certification.
+      </p>
+      <!--Contacta por Redes Sociales -->
+      <div class="social-media">
+        <!--El target es para sacar nueva pestaña
             rel es para referencia sin mandar las referencias de datos    -->
-    <a href="https://github.com/edgarZemedu" target="_blank" rel="noreferrer">👨‍💻 GitHub</a>
-    </p>
-    <a href="https://www.linkedin.com/in/zemedu-freiria-cameselle-2627a9199/" target="_blank" rel="noreferrer"> 🔗
-      LinkedIn</a>
-    </p>
-    <a href="https://wa.me/34662432796?text=Hola%20Zeme" target="_blank" rel="noreferrer">📱 WhatsApp</a>
-    </p>
-    <a id="copyEmailBtn" class="email">📨 Email </a>
+        <a href="#" ><i class='bxl bx-gmail'></i> </a>
+        <a href="https://github.com/edgarZemedu"><i class='bxl bx-github'></i> </a>
+        <a href="https://www.linkedin.com/in/zemedu-freiria-cameselle-2627a9199/" > <i
+            class='bxl bx-linkedin-square'></i> </a>
+        <a href="https://wa.me/34662432796?text=Hola%20Zeme"><i
+            class='bxl bx-whatsapp'></i> </a>
+      </div>
+      <div class="dowlaod-cv">
+        <a href="/CV-7_2025 in.pdf" download="CV_Zemedu_Freiria_Cameselle.pdf" class="btn-cv">Download CV</a>
+      </div>
+    </div>
 
-  </div>
-  <!--Intro... -->
-  <p class="parrafo">
-    Hii 👋, I'm Zeme!
-  </p>
-  I'm passionate about the software world and specialize in Agile: Software Project
-  Management with. I
-  have strengthened my team's ability to design efficient and adaptive testing
-  strategies.
-  I am always seeking continuous improvement and innovation opportunities and i am motivated by
-  challenges and the opportunity to grow into leadership roles in software quality
-  and development.</p>
-  I am currently studying to obtain the ISTQB certification.
-  </p>
-
-  <!--Experiencia laboral -->
-  <section class="career">
-    <h2 class="bloques">💼 Career Experience</h2>
-    <article class="pies-bloques" id="conjuerer">
-      <header>
-        <h3 class="">QA Tester at <a href="https://www.linkedin.com/company/5750516/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bl%2FUWkIgsQs2lqJOe4jZ2qQ%3D%3D" target="_blank" class=""> Conjuerer Services S.A </a>
-        </h3>
-      </header>
-      <div>
-        <small>08/07/2024 - Present <strong>📍Palma de Mallorca, Spain</strong></small>
-        <p>Translate requirements and functional specifications into documented test plans, 
-          cases, and steps. 
-          Analyze and report defects found during testing, and communicate results to the development team. Collaborate with developers and product owners to continuously improve software quality. 
-          Contribute to test automation projects by defining, creating, maintaining automated tests, and generating test reports with (<strong>Selenium + Java, Webdriver.io, Playright</strong>).
-
-            </p>
-      </div>
-      <footer>
-        <!--infomarcion secundaria como añadir el tema de Copyright y se suele añadir un <small/> dentro  -->
-      </footer>
-    </article>
-    <article class="pies-bloques" id="embat">
-      <header>
-        <h3 class="">Junior Engineer QA at <a href="https://app.embat.io/login" target="_blank" class=""> Embat </a>
-        </h3>
-      </header>
-      <div>
-        <small>11/03/2024 - Present [Hybrid] <strong>📍Madrid, Spain</strong></small>
-        <p>I collaborated closely with development and product teams to analyze
-          requirements(<strong>Jira, Confluence</strong>) and designs in early stages to identify potential risks and
-          issues and I worked proactively to identify opportunities for test automation and
-          contribute to the development of automated test scripts when appropriate
-          with different tools (<strong>Cypress, Cucumber, MongoDB</strong>).
-           </p>
-      </div>
-      <footer>
-        <!--infomarcion secundaria como añadir el tema de Copyright y se suele añadir un <small/> dentro  -->
-      </footer>
-    </article>
-    <article class="pies-bloques" id="vodafoneStrategic">
-      <header>
-        <h3 class=""> IT Strategic Programs Specialist at <a href="https://oferta.vodafone.es/vodafone-one/"
-            target="_blank" class=""> Vodafone España S.L </a></h3>
-      </header>
-      <div>
-        <small>10/05/2023 - 15/02/2024 [Hibrid]<strong>📍Vigo, Spain</strong></small>
-        <p>Design and develop IT solution in terms of application software(<strong>Jira, Confluence</strong>), operating
-          system and data warehouses.</p>
-      </div>
-      <footer>
-      </footer>
-    </article>
-    <article class="pies-bloques" id="vodafoneQA">
-      <header>
-        <h3 class="">Junior Agile QA at <a href="https://oferta.vodafone.es/vodafone-one/" target="_blank" class="">
-            Vodafone España S.L </a></h3>
-      </header>
-      <div>
-        <small>17/05/2022 - 10/05/2023 [Hibrid]<strong>📍Vigo, Spaiin</strong></small>
-        <p>I worked in agile environment with different teams (Development, Product,
-          Operations and Design) to assure the QA coverage.
-          I also created and executed <strong>manual test cases</strong> and attended
-          planning meetings, provided feedback on user stories and created acceptance
-          criteria.</p>
-      </div>
-      <footer>
-      </footer>
-    </article>
-    <article class="pies-bloques" id="sigma">
-      <h3>IT Developer <a href="https://sigma.world/es/" target="_blank" class=""> Sigma Igaming World</a></h3>
-      <small>11/10/2021 - 20/12/2021<strong>📍Sliema, Malta</strong></small>
-      <p>I completed my internship focused on maintaining and updating the
-        company's website.</p>
-    </article>
+    <div class="home-imagen" id="about">
+      <img class="home-imagen" alt="Foto de Zeme de titulo" title="Foto de Zeme"
+        src="/image/foto_e.jpg">
+    </div>
   </section>
 
-  <!--Estudios -->
-  <section class="studies">
-    <h2 class="bloques">🎓 Studies</h2>
-    <article class="pies-bloques" id="ies-teis">
-      <header>
-        <h3 class="">Higher Technician in DAM Multi-platform Applications Development at <a
-            href="https://www.edu.xunta.gal/centros/iesteis/" target="_blank" class="">IES Teis</a></h3>
-      </header>
-      <div>
-        <small>2018 - 2020 [Vigo]</small>
-      </div>
-    </article>
-    <article class="pies-bloques" id="skillsoft">
-      <header>
-        <h3 class=""> The Advanced Agile certification at <a href="https://www.skillsoft.com" target="_blank"
-            class="">Skillsoft</a></h3>
-      </header>
-      <div>
-        <small>12/2023 [Online]</small>
-      </div>
-    </article>
-    <article class="pies-bloques" id="mtp">
-      <header>
-        <h3 class=""> The ISTQB® Certified Tester Foundation at <a href="https://www.mtp.es" target="_blank"
-            class="">MTP</a></h3>
-      </header>
-      <div>
-        <small>01/2025 - Current [Online]</small>
-      </div>
-    </article>
-  </section>
 
-  <!--Proyectos -->
-  <section class="projects">
-    <h2 class="bloques">📚 Projects & Achievements</h2>
-    <p>      <!--Añadir aquí proyectos -->    </p>
-    <footer>
-      <p>You can check all my projects at <a href="https://github.com/edgarZemedu">Github</a></p>
-    </footer>
-  </section>
+  <!---Experiencia laboral -->
 
-  <!--Ponte en contacto -->
-  <!-- <section class="contacts">
-    <h2>☎️Ponte en contacto</h2>
-    <form method="post" action="/">
-      <fieldset>
-        <legend>Información personal</legend>
-        <div>
-          <label for="inputName">Nombre: </label>
-          <input type="text" id="inputName" name="name" placeholder="pepito...">
-        </div>
-        <div>
-          <label for="inputEmail">Correo:</label>
-          <input type="email" id="inputEmail" name="name" placeholder="pepito@gmail.com">
-        </div>
-      </fieldset>
-      <fieldset>
-        <legend>Información Adicional</legend>
-        <div>
-          <label for="inputCompany">Nombre de Empresa: </label>
-          <input type="text" id="inputCompany" name="company" placeholder="Tesla">
-        </div>
-        <div>
-          <label for="inputTel">Teléfono:</label>
-          <input type="tel" id="inputTel" name="name" placeholder="+34 12345678">
-        </div>
-      </fieldset>
-      <input type="submit" value="Enviar">
-    </form>
-  </section> -->
 
   <!--Pie de página -->
   <div class="pie">

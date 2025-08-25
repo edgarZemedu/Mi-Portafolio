@@ -1,28 +1,114 @@
-.cabecera {
-    background-color: #f5f6fa;
-    text-align: center;
-    border-width: 0;
-    border-style: solid;    
-}
-.imagen {
-    border-radius: 50%;
-    border: 5px solid #54a50c;
+
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    border-width: 0;
-    border-style: solid;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
+}
+:root {
+    --color-secundario: #323946;
+    --color-fondo: #1f242d;
+    --color-texto: #fff;
+    --main-color:#0eff;
+    --v-animation: #54a50c;
+    --n-animation: #040403;
+}
+html {
+    font-size: 60%;
+    overflow: hidden;
+}
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto); 
+}
+.cabecera {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--color-fondo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:  100;  
+}
+.navegacion a {
+    color: var(--color-texto);
+    font-size: 1.7rem;
+    margin-left: 4rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.navegacion a:hover {
+    color: var(--main-color);
+}
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 10rem 9% 2rem;
+}
+.home-contenido h3 {
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+.home-contenido h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.home-contenido p {
+    font-size: 1.6rem;
+    margin: 1.5rem 0 3rem;
+    color: var(--color-texto);
+    max-width: 600px;
+}
+.home-imagen {
+    width: 30vw;
+
+}
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    color: var(--main-color);
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+.social-media a:hover {
+    background: var(--main-color);
+    color: var(--color-fondo);
+    box-sizing: 0 0 1rem var(--main-color) ;
+}
+.btn-cv {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: var(--color-fondo);
+    padding: 1rem 2.8rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 4rem;
+    text-decoration: none;
+    letter-spacing: .1rem;
+    box-shadow: 0 0 1rem var(--main-color) ;
+    transition: 0.5s ease;
+}
+.btn-cv:hover {
+    box-shadow: none;
 }
 
-body {
-    background-color: #f5f6fa;
-    color: #222f3e;
-    padding: 2.5rem;
-    max-width: 48rem;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
-    border-width: 0;
-    border-style: solid;
-}
 
 div.pie {
     text-align: center;
@@ -144,19 +230,7 @@ div.pie {
 }
 
 /* Estilos generales para el selector de idioma */
-.redes {
-    position: absolute;
-    text-align: center;
-    margin-top: 10%;
-    border-style: groove;
-    border-width: 10px;
-    top: 20px;
-    right: 100px;
-}
 
-.redes a {
-    text-decoration: none;
-}
 /*SECCIONES: Career Experience*/
 .bloques {
     font-size: 1.5rem;
