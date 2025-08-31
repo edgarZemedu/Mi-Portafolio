@@ -50,7 +50,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 10 0vh;
     text-align: center;
     padding: 10rem 9% 2rem;
 }
@@ -71,6 +71,8 @@ body {
 }
 .home-imagen {
     width: 30vw;
+    border-radius: 25rem;
+    padding:  1rem;
 
 }
 .social-media a {
@@ -87,11 +89,13 @@ body {
     margin: 3rem 1.5rem 3rem 0;
     transition: .5s ease;
 }
+
 .social-media a:hover {
-    background: var(--main-color);
+    background: transparent;
     color: var(--color-fondo);
     box-sizing: 0 0 1rem var(--main-color) ;
 }
+    
 .btn-cv {
     display: inline-block;
     background-color: var(--main-color);
