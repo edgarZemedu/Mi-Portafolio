@@ -39,42 +39,10 @@
 </head>
 
 <body>
-  <!-- SELECTOR DE IDIOMAS (CLASS)-->
-  <div class="demo-content language-top-right">
-    <div class="language-selector">
-      <div class="language-button" id="languageButton">
-        <span class="flag flag-icon flag-icon-es"></span>
-        <span>Español</span>
-      </div>
-      <!-- Dropdown de opciones de idioma -->
-      <div class="language-dropdown" id="languageDropdown">
-        <div class="language-option" data-lang="es">
-          <span class="flag flag-icon flag-icon-es"></span>
-          <span>Español</span>
-        </div>
-        <div class="language-option" data-lang="en">
-          <span class="flag flag-icon flag-icon-us"></span>
-          <span>English</span>
-        </div>
-        <div class="language-option" data-lang="fr">
-          <span class="flag flag-icon flag-icon-fr"></span>
-          <span>Français</span>
-        </div>
-        <div class="language-option" data-lang="de">
-          <span class="flag flag-icon flag-icon-de"></span>
-          <span>Deutsch</span>
-        </div>
-        <div class="language-option" data-lang="pt">
-          <span class="flag flag-icon flag-icon-br"></span>
-          <span>Português</span>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- HEADER (CLASS)-->
   <header class="cabecera">
-    
+
     <a href="#" class="logo">Portafolio</a>
     <nadvar class="navegacion">
       <a href="#home">Home</a>
@@ -83,8 +51,41 @@
       <a href="#contacts">Contact</a>
     </nadvar>
 
+    <!-- SELECTOR DE IDIOMAS (CLASS)-->
+    <div class="demo-content language-top-right">
+      <div class="language-selector">
+        <div class="language-button" id="languageButton">
+          <span class="flag flag-icon flag-icon-es"></span>
+          <span>Español</span>
+        </div>
+        <!-- Dropdown de opciones de idioma -->
+        <div class="language-dropdown" id="languageDropdown">
+          <div class="language-option" data-lang="es">
+            <span class="flag flag-icon flag-icon-es"></span>
+            <span>Español</span>
+          </div>
+          <div class="language-option" data-lang="en">
+            <span class="flag flag-icon flag-icon-us"></span>
+            <span>English</span>
+          </div>
+          <div class="language-option" data-lang="fr">
+            <span class="flag flag-icon flag-icon-fr"></span>
+            <span>Français</span>
+          </div>
+          <div class="language-option" data-lang="de">
+            <span class="flag flag-icon flag-icon-de"></span>
+            <span>Deutsch</span>
+          </div>
+          <div class="language-option" data-lang="pt">
+            <span class="flag flag-icon flag-icon-br"></span>
+            <span>Português</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </header>
-  
+  <!-- SECCION -->
   <section class="home">
 
     <div class="home-contenido" id="home">
@@ -105,13 +106,12 @@
 
       <!--Contacta por Redes Sociales -->
       <div class="social-media">
-        <!--El target es para sacar nueva pestaña rel es para referencia sin mandar las referencias de datos    -->
-        <a href="#" ><i class='bxl bx-gmail'></i> </a>
-        <a href="https://github.com/edgarZemedu"><i class='bxl bx-github'></i> </a>
-        <a href="https://www.linkedin.com/in/zemedu-freiria-cameselle-2627a9199/" > <i
-            class='bxl bx-linkedin-square'></i> </a>
-        <a href="https://wa.me/34662432796?text=Hola%20Zeme"><i
-            class='bxl bx-whatsapp'></i> </a>
+        <!--El target es para sacar nueva pestaña, rel es para referencia sin mandar las referencias de datos    -->
+        <a href="#"><i class='bx bxl-gmail'></i> </a>
+        <a href="https://github.com/edgarZemedu"><i class='bx bxl-github'></i> </a>
+        <a href="https://www.linkedin.com/in/zemedu-freiria-cameselle-2627a9199/"> <i
+            class='bx bxl-linkedin-square'></i> </a>
+        <a href="https://wa.me/34662432796?text=Hola%20Zeme"><i class='bx bxl-whatsapp'></i> </a>
       </div>
       <div class="dowlaod-cv">
         <a href="/CV-7_2025 in.pdf" download="CV_Zemedu_Freiria_Cameselle.pdf" class="btn-cv">Download CV</a>
@@ -119,13 +119,27 @@
     </div>
 
     <div class="home-imagen" id="about">
-      <img class="home-imagen" alt="Foto de Zeme de titulo" title="Foto de Zeme"
-        src="/image/foto_e.jpg">
+      <img class="home-imagen" alt="Foto de Zeme de titulo" title="Foto de Zeme" src="/image/foto_e.jpg">
     </div>
   </section>
 
+  <!-- SECCION  ABOUT-->
+  <section class="about" id="about">
+    <div class="about-imagen" id="about">
+      <img class="about-imagen" alt="Foto de Zeme para las secciones" title="Foto de Zeme" src="/image/foto_e.jpg">
+    </div>
+    <div class="about-contenido">
+      <h2 class="heading">👨‍💻 About <span> Me </span></h2>
+      <p> I am a proactive and responsible person, with a strong commitment to my work. I enjoy working in
+        teams and collaborating to achieve common goals. I am always willing to learn and improve my skills to
+        contribute effectively to the success of the projects I am involved in.</p>
+      <p> I have experience in Agile methodologies, which has allowed me to develop skills in project management,
+        teamwork, and adaptability to change. I am passionate about technology and constantly seek to stay updated
+        on the latest trends and advancements in the field.</p>
+      <p> In addition to my technical skills, I have strong communication skills that allow me to effectively convey
+        ideas and collaborate with colleagues and clients. I am confident that my combination of technical skills,
+        commitment, and passion for technology makes me a valuable asset for any organization.</p>
 
-  <!---Experiencia laboral -->
 
 
   <!--Pie de página -->
@@ -136,6 +150,7 @@
       <p class="p2">Check out the <a href="https://github.com/edgarZemedu/Mi-Portafolio"> code </a>.</p>
     </div>
   </div>
+
   <!-- Scripts -->
   <script src="script.js"></script>
 

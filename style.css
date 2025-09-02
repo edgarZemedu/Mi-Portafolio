@@ -12,13 +12,14 @@
     --color-secundario: #323946;
     --color-fondo: #1f242d;
     --color-texto: #fff;
-    --main-color:#0eff;
+    --main-color:#0ef;
     --v-animation: #54a50c;
     --n-animation: #040403;
 }
 html {
     font-size: 60%;
-    overflow: hidden;
+    overflow-x : hidden;
+    
 }
 body {
     background-color: var(--color-fondo);
@@ -50,7 +51,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 10 0vh;
+    min-height: 100vh;
     text-align: center;
     padding: 10rem 9% 2rem;
 }
@@ -88,11 +89,12 @@ body {
     border-radius: 50%;
     margin: 3rem 1.5rem 3rem 0;
     transition: .5s ease;
+    text-decoration: none;
 }
 
 .social-media a:hover {
-    background: transparent;
-    color: var(--color-fondo);
+    background: var(--main-color);
+    color: var(--color-secundario);
     box-sizing: 0 0 1rem var(--main-color) ;
 }
     
@@ -113,6 +115,13 @@ body {
     box-shadow: none;
 }
 
+/* Estilos para la sección "About Me" */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--color-secundario) ;
 
 div.pie {
     text-align: center;
@@ -120,27 +129,6 @@ div.pie {
     box-sizing: border-box;
     border-width: 0;
     border-style: solid;
-}
-
-.pie-linea {
-    margin: 0;
-    height: 0;
-    color: inherit;
-    border-top-width: 60px;
-    box-sizing: border-box;
-    border-width: 0;
-    border-style: solid;
-    color: #050505;
-}
-
-.pie-pagina-centro {
-    justify-content: center;
-    flex-wrap: wrap;
-    display: flex;
-    box-sizing: border-box;
-    border-width: 0;
-    border-style: solid;
-    border-color: #e5e7eb;
 }
 
 /* Estilos generales para el selector de idioma */
@@ -151,7 +139,6 @@ div.pie {
     right: 90px;
     z-index: 9000;
 }
-
 .language-selector {
     position: relative;
     display: inline-block;
@@ -221,32 +208,25 @@ div.pie {
     height: 20px;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Pie de página */
+.pie-linea {
+    margin: 0;
+    height: 0;
+    color: inherit;
+    border-top-width: 60px;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    color: #050505;
 }
 
-/* Estilos generales para el selector de idioma */
-
-/*SECCIONES: Career Experience*/
-.bloques {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #54a50c;
-    padding-bottom: 0.5rem;
-}
-.pies-bloques {
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border: 1px solid #d0e2bf;
-    border-radius: 10px;
-    background-color: #f1f5f2;
+.pie-pagina-centro {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
 }
