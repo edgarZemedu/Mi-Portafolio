@@ -66,9 +66,9 @@ body {
 }
 .home-contenido p {
     font-size: 1.6rem;
-    margin: 1.5rem 0 3rem;
+    line-height: 1.6;
     color: var(--color-texto);
-    max-width: 600px;
+    margin: 1rem 0 1rem;
 }
 .home-imagen {
     width: 30vw;
@@ -122,14 +122,52 @@ body {
     justify-content: center;
     gap: 1rem;
     background-color: var(--color-secundario) ;
-
-div.pie {
-    text-align: center;
-    margin-top: 2.5rem;
-    box-sizing: border-box;
-    border-width: 0;
-    border-style: solid;
 }
+.about-imagen img{
+    width: 30vw;
+    text-align: left;
+    border-radius: 25rem;
+    padding:  5rem;
+}
+.about-contenido {
+  
+
+}
+.about-contenido h2 {
+    font-size: 3.6rem;
+    margin-bottom: 1rem;
+}
+.about-contenido h2 span {
+    color: var(--main-color);
+}
+.about-contenido h3 {
+    font-size: 2.6rem;
+}
+.about-contenido p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--color-texto);
+    margin: 1rem 0 1rem;
+}   
+.about-contenido a {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: var(--color-fondo);
+    padding: 1rem 2.8rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 4rem;
+    text-decoration: none;
+    letter-spacing: .1rem;
+    box-shadow: 0 0 1rem var(--main-color) ;
+    transition: 0.5s ease;
+    margin-top: 2rem;
+}
+.about-contenido a:hover {
+    box-shadow: none;
+}
+
+
 
 /* Estilos generales para el selector de idioma */
 
@@ -210,6 +248,15 @@ div.pie {
 
 
 /* Pie de página */
+
+div.pie {
+    text-align: center;
+    margin-top: 2.5rem;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+}
+
 .pie-linea {
     margin: 0;
     height: 0;
